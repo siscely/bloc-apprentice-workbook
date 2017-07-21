@@ -11,48 +11,111 @@
 ### Questions
 
 1. What is HTML and what is it used for?
+- HTML is Hypertext Markup Language.  It is used to create online documents called webpages.
+
 2. What is the difference between an ID and a class?
+-A class selector is most often used on several elements to set a particular style for many HTML elements, while ID is unique to only one element.
+
 3. What does it mean to write "semantic" HTML?
+-Semantic HTML introduces meaning to the webpage rather than just presentation. eg. <p>.  Semanantic tags provide information about the contents of the tags that goes beyond just how they look on a page.
 
 ### Exercises
 
 1. Write a paragraph tag with a class of "highlight" and content "Watch out!".
+- <p class ="highlight"> "Watch Out!" </p>
+
 2. Write an HTML image tag to show an image called `profile-picture.jpg`.
+<img = src="profile-picture.jpg">
+
 3. Write a link tag that links to http://google.com.
+<link href="http://google.com">
+
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
+<html>
+  <head>
+    <link>
+   </head>
+   <body>
+   ....
+   </body>
+  </head>
+ </html>
+    
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
+<html>
+  <head>
+    <script src="main.js"></script>
+   </head>
+   <body>
+   ....
+   </body>
+  </head>
+ </html>
+
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
+<html>
+  <head>
+    <link type="text/main.css">
+   </head>
+   <body>
+   ....
+   </body>
+  </head>
+ </html>
+
 8. Write a numbered list in HTML and list three of your favorite books.
+<ol>
+<li>"Is Everyone Hanging out Without me" - by Mindy Kaling</li>
+<li>"The Story of My Life" - by Helen Keller</li>
+<li>"Three cups of Tea: One man's mission to promote peace... One school at a time" - by Greg Mortenson</li>
+</ol>
+    
+  
 9. Fix the indentation of the following HTML sample:
 
-  ```html
-  <div>
-  <ul>
-  <li>Item 1</li>
-    <li>Item 2</li>
-  <li>Item 3</li>
-    </ul>
-    </div>
-  ```
+  <html>
+    <div>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+     </ul>
+   </div>
+ </html>
+ 
 
 ## CSS
 
 ### Questions
 
 1. What is CSS and what is it used for?
+-Cascading style sheet. It is a language used to describe the presentation of webpages including color, layouts, and font.
+
 2. What is the CSS box model?
+- CSS box model references the design and layout of the HTML elements. It refers to how properties such as margins, padding, borders, and content of each element are calculated in conjunction with another.
+
 3. What's the difference between margin and padding?
+- Margin is the area around the border while padding is area around the content.
 
 ### Exercises
 
 1. Write a CSS rule to make the text of all `h1` tags red.
+- h1{
+      color: red;
+     }
 2. Write a CSS rule to make the background color of the link with `class="btn"` blue:
-
+ .btn{
+ background-color: blue;
+ }
+ 
   ```html
   <a href="#" class="btn">Learn more</a>
   ```
 
 3. Write a CSS rule to give the first paragraph in the following HTML a font size of `20px`, but not the second paragraph.
+.jumbotron p{
+  font-size: 20px;
+  }
 
   ```html
   <header class="jumbotron">
@@ -66,11 +129,21 @@
 
 ### Questions
 
-1. What is a function? What are they used for?
+1. What is a function? What are they used for? 
+- A function "does something" step-by-step that we need to do repeatedly.
+
 2. What is the difference between `==` and `===`?
+-Both values on either side of == should be the same.  Both value and type on either side of === should be the same.
+Say x=5, then x==5 is true while x==='5' is false.
+
 3. What is the difference between global and local scope variables?
+-Within function scope of variable is local i.e. variable can be accessed only locally.  variables declared outside the function are glocal i.e. they are accessible from anywhere.
+
 4. What is a boolean value?
+- A boolean value is true or false.
+
 5. What is an array?
+-An array is a data structure with automatically indexed positions.
 
 ### Exercises
 
