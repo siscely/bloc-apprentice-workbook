@@ -148,10 +148,25 @@ Say x=5, then x==5 is true while x==='5' is false.
 ### Exercises
 
 1. Write a line that declares a variable called `myName` and set its value to your name.
+- var myName = "Siscely George";
+
 2. Write a loop that logs the numbers 1 through 10 to the console.
+for (i=1; i<=10; i++){
+console.log(i);
+}
+
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
+- if (score>3 && lives>0){
+      alert("You Win!");
+      }
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
+- function sayHello(name){
+console.log("Hello" + name);
+}
+sayHello(Siscely);
+
 5. What would the following script log to the console?
+"Friday, Friday"
 
   ```javascript
   var currentSong = "Call Me Maybe";
@@ -166,6 +181,7 @@ Say x=5, then x==5 is true while x==='5' is false.
   ```
 
 6. What would the following script log to the console?
+- 10
 
   ```javascript
   var add = function(a, b) {
@@ -178,6 +194,7 @@ Say x=5, then x==5 is true while x==='5' is false.
   ```
 
 7. What would the following script log to the console?
+- Hello Sarah ! Goodbye Sarah !
 
   ```javascript
   var helloGoodbye = function(name) {
@@ -196,8 +213,30 @@ Say x=5, then x==5 is true while x==='5' is false.
   ```
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
+var words = ["Hello Sarah", "Goodbye Sarah", "console", "array", "function"];
+var lgth=0;
+var findLongestWord = function(words){
+for (var i = 0; i < words.length; i++){
+if (words[i].length > lgth){
+ var lgth = words[i].length;
+ longest = words[i];
+  }
+ }
+ return longest;
+ }
+
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
+var num = [1, 2, 3, 4];
+var total = 0;
+var sum = function(num){
+for (var i =0; i < num.length; i++){
+var total = sum[i] + total;
+}
+return total;
+}
+
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
   ```javascript
