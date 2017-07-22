@@ -278,25 +278,45 @@ findVowel(e);
 ### Questions
 
 1. What is the command line and what is it used for?
+- Command line is a user interface to the computer's operating system.  User types in a command and receives response back from the system.
+
 2. What does the command `ls` do?
+Prints files in the current directory.
+
 3. What does the command `pwd` do?
+prints the current working directory.
+
 4. What does the following command do: `cd my-cool-project`
+changes directory to 'my-cool-project'
 
 ### Exercises
 
 1. Write the command to make a new directory called "my-cool-project".
+mkdir my-cool-project
+
 2. Write the command to create a file called "index.html".
+touch index.html
+
 3. Write the command to delete a file called "main.css".
+rm main.css
 
 ## Git
 
 ### Questions
 
 1. What is Git and what is it used for?
+Git is a distributed version control system.  It helps in access control, display contents of a git repository via the web, and help manage multiple repositories. It allows a team of people to work together, all using the same files.
+
 2. What's the difference between a local repository and a remote repository?
+Local repository is one on which we make local changes on, typically local repo is on our computer.  Remote repo is one of the server. It is used to publish to some people and allow them to read or write it.
 
 ### Exercises
 
 1. Write the command that you would use to create a new local Git repository.
+git init
+
 2. Write the command to stage a file called `index.html` to be committed.
+git add index.html
+
 3. Write the command to view the current status of the git repository.
+git status
