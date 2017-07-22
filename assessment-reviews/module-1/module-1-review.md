@@ -236,6 +236,17 @@ return total;
 }
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+var vowels = [a, e, i, o, u];
+var findVowel = function(letter){
+for (var i =0; i <vowels.length; i++){
+if (findVowel == vowels[i]){
+ return true;
+ }
+}
+return false;
+}
+findVowel(e);
+
 
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
@@ -247,10 +258,21 @@ return total;
       console.log("Woof!");
     }
   };
+  pet.speak(Woof!);
   ```
 
 12. Using the same script as above, write the correct line to log the dog's name to the console.
-
+```javascript
+  var pet = {
+    name: "Charles",
+    goodDog: true,
+    speak: function() {
+      console.log("Woof!");
+    }
+  };
+  pet.speak(Woof!);
+  console.log(pet.name);
+  
 ## Command Line
 
 ### Questions
