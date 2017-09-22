@@ -26,7 +26,9 @@
   ```html
   <a href="#" class="btn">Learn more</a>
   ```
-
+.btn a:hover{
+    background-color: blue;
+ }
 2. Write a CSS rule to give the `.container` a maximum width of `980px` when the browser window is wider than `1200px`:
 
   ```html
