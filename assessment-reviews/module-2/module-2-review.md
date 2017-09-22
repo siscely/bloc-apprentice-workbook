@@ -13,10 +13,20 @@
 ### Questions
 
 1. What is the box model?
+- It is a way to describe the borders and spacing in between the boxes of each tag.
+
 2. What is the difference between block and inline elements?
+- A block element will span the full width of a container.  An inline element don't try to take more width than they need.
+
 3. What is responsive design?
+-
+
 4. Which selector is more specific, a tag selector or class selector?
+- Class selector is more specific, it is a way to add a specific style to one tag, but not the other.
+
 5. What does `box-sizing` do?
+-
+
 6. What's the difference between `relative` and `absolute` positioning?
 
 ### Exercises
