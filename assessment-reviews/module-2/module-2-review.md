@@ -67,6 +67,7 @@
     <p>Third paragraph</p>
   </section>
   ```
+- Third paragraph.
 
 4. Open this [JSBin](http://jsbin.com/qigiwuhepe/1/edit?html,css,output). Write a CSS rule using floats to make the HTML sample into a four column layout. Paste your udpated link below.
 
@@ -75,11 +76,38 @@
 ### Questions
 
 1. What is a callback?
+- Callback is a function passed to another function as a parameter.  It gets called or executed in the other function.
 
 ### Exercises
 
 1. Write a function `filterLongWords()` that takes an array of words and an integer `num` and returns the array of words that are longer than `num`.
+-var filterLongWords = function(arrWords, num){
+  var a=[];
+  for(var i=0; i<arrWords.length; i++){
+    if(arrWords[i].length > num){
+      a.push(arrWords[i]);
+    }
+  }
+  console.log([a]);
+}
+filterLongWords(["Happy","kind","lovely"], 4);
+
+http://jsbin.com/woliyujotu/1/edit?html,js,console
+
 2. Write a function `charFreq()` that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like `charFreq("abbabcbdbabdbdbabababcbcbab")`.
+-function charFreq (string){
+  var list = {};
+  var length = string.length;
+  for (var i = 0; i<length; i++){
+    if (string.charAt(i) in list)
+    list[string.charAt(i)] += 1;
+    else
+    list[string.charAt(i)] = 1;
+  }
+  console.log(list);
+}
+charFreq("abbabcbdbabdbdbabababcbcbab");
+http://jsbin.com/duhuzosodu/1/edit?html,js,console
 
 ## DOM Scripting
 
