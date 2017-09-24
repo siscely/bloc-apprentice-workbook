@@ -129,6 +129,7 @@ http://jsbin.com/duhuzosodu/1/edit?html,js,console
 ### Questions
 
 1. What does DOM stand for and what is it?
+-DOM stands for Document object model.  When a browser loads a page it uses DOM to interpret each of the document's element as an object(node). The DOM builds a tree of objects that is accessible to Javascript.
 
 ### Exercises
 
@@ -137,9 +138,15 @@ http://jsbin.com/duhuzosodu/1/edit?html,js,console
   ```html
   <a href="#" id="next" class="btn">Next</a>
   ```
+  - var nextButton = document.getElementById('next');
 
 2. Write another line that updates the text of `nextButton` to `"Next image"`.
+- nextButton.innerText="Next image";
+
 3. Write another line that adds a click event listener to `nextButton` so that when it's clicked the browser alerts `"Next image coming up."`.
+-nextButton.addEventListener("click", function(event){
+      alert("Next image coming up.");
+      });
 
 ## jQuery
 
