@@ -141,7 +141,7 @@ http://jsbin.com/duhuzosodu/1/edit?html,js,console
   - var nextButton = document.getElementById('next');
 
 2. Write another line that updates the text of `nextButton` to `"Next image"`.
-- nextButton.innerText="Next image";
+- nextButton.textContent="Next image";
 
 3. Write another line that adds a click event listener to `nextButton` so that when it's clicked the browser alerts `"Next image coming up."`.
 -nextButton.addEventListener("click", function(event){
@@ -152,8 +152,11 @@ http://jsbin.com/duhuzosodu/1/edit?html,js,console
 
 ### Questions
 
-1. What is a JavaScript library and why do we use them?
+1. What is a JavaScript library and why do we use them? 
+-A Javascript library is a library of pre-written Javascript which allows for easier development of javascript based applications. These libraries execute many common, timing-consuming tasks.
+
 2. What is jQuery for?
+-jQuery is a well-written javascript code.  It is a fast and concise javascript library that simplifies HTML document traversing, event handling, animating for rapid web development. It has no cross-browser compatibility issues.
 
 ### Exercises
 
@@ -164,8 +167,15 @@ http://jsbin.com/duhuzosodu/1/edit?html,js,console
   <a href="#" id="beginning" class="btn">Beginning</a>
   <a href="#" id="previous" class="btn">Previous</a>
   ```
+  - var $buttons=$('.btn');
+   $buttons.find('.btn');
 
 2. Write another line that adds a click event to the buttons that logs `'click'` to the console when the button is clicked. Use the jQuery syntax.
+-$(buttons).click(clickHandler);
+
+var clickHandler = function(){
+console.log("click");
+};
 
 ## Angular
 
