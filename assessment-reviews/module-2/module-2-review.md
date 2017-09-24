@@ -19,15 +19,17 @@
 - A block element will span the full width of a container.  An inline element don't try to take more width than they need.
 
 3. What is responsive design?
--
+- Responsive design makes your webpage look good on all devices.  It is about using CSS and HTML to resize, shrink, enlarge, or moves the content to make it look good on any screen.
 
 4. Which selector is more specific, a tag selector or class selector?
 - Class selector is more specific, it is a way to add a specific style to one tag, but not the other.
 
 5. What does `box-sizing` do?
--
+- If we want width and height of a box to stay the same when we add padding and borders to a box, there is a box-sizing value called border-box that helps us achieve this. i.e. box-sizing: border-box; 
 
 6. What's the difference between `relative` and `absolute` positioning?
+-Relatively positioned elements stack one on top of the next, these elements are in the normal flow.  You can shift these elements around using offset properties such as: top, right, bottom, and left.  
+-Absolutely positioned elements are removed from the normal flow, they can be positioned anywhere, they will not affect or be affected by any other element in the flow.  Absolutely positioned elements also use offset properties.
 
 ### Exercises
 
@@ -46,6 +48,11 @@
     <h1>I'm a heading!</h1>
   </div>
   ```
+  
+  - .container{
+    margin: 0 auto;
+    max-width:980px;
+    }
 
 3. Which text would be red in the following example?
 
@@ -70,6 +77,14 @@
 - Third paragraph.
 
 4. Open this [JSBin](http://jsbin.com/qigiwuhepe/1/edit?html,css,output). Write a CSS rule using floats to make the HTML sample into a four column layout. Paste your udpated link below.
+-http://jsbin.com/debuciruno/1/edit?html,css,output
+-.column{
+  float:left;
+  }
+
+.column.fourth{
+  width:25%
+}
 
 ## JavaScript
 
