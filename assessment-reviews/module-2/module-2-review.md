@@ -182,14 +182,26 @@ console.log("click");
 ### Questions
 
 1. How is a framework different than a library?
+-A framework, like Angular, provides the basic structure of an application. The "framework" is in charge and our code fills in the details.  A library, such as jQuery, is a collection of pre-written code consisting of common tasks that simplify development. Our code is in charge and uses a library to retrieve specific functions from the collection.
+
 2. What is a controller?
+- Controllers contain the business logic that apply functions and values to the scope. They do not share code between each other.
+
 3. What is a view?
+-Model is the data of an application.  The view is the output representation of that data or the UI(user interface).
+
 4. What is a single page application?
+-Single page applications are web apps that load a single HTML page and dynamically update that page as the user interacts with the app.
+
 5. What is a directive in Angular?
+-An Angular element in HTML is a directive.  It binds angular functionality to HTML on a page.
 
 ## Git
 
 ### Exercises
 
 1. Write a command to create a new branch called `bug-fix`.
+git branch bug-fix
+
 2. If you're on the `master` branch, write a command to merge a branch called `bug-fix` into the `master` branch.
+git merge bug-fix
