@@ -25,7 +25,7 @@
 - <p class ="highlight"> "Watch Out!" </p>
 
 2. Write an HTML image tag to show an image called `profile-picture.jpg`.
-<img = src="profile-picture.jpg">
+<img src="profile-picture.jpg">
 
 3. Write a link tag that links to http://google.com.
 <link href="http://google.com">
@@ -38,8 +38,7 @@
    <body>
    ....
    </body>
-  </head>
- </html>
+  </html>
     
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
 <html>
@@ -55,7 +54,7 @@
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
 <html>
   <head>
-    <link type="text/main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
    </head>
    <body>
    ....
