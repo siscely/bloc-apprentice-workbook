@@ -210,6 +210,7 @@ sayHello(Siscely);
 
   console.log(helloGoodbye("Sarah"));
   ```
+  
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
 var words = ["Hello Sarah", "Goodbye Sarah", "console", "array", "function"];
@@ -257,21 +258,21 @@ findVowel(e);
       console.log("Woof!");
     }
   };
-  pet.speak(Woof!);
+  pet.speak();
   ```
 
 12. Using the same script as above, write the correct line to log the dog's name to the console.
 ```javascript
-  var pet = {
+    var pet = {
     name: "Charles",
     goodDog: true,
     speak: function() {
-      console.log("Woof!");
+      console.log(pet.name);
     }
   };
-  pet.speak(Woof!);
-  console.log(pet.name);
+  pet.speak();
   
+ 
 ## Command Line
 
 ### Questions
